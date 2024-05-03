@@ -1,0 +1,12 @@
+C:\Users\Rokoko\HandbookSimulator\Typographer5000\Typograph5000.Tests\obj\Debug\Typograph5000.Tests.csproj.AssemblyReference.cache
+C:\Users\Rokoko\HandbookSimulator\Typographer5000\Typograph5000.Tests\obj\Debug\Typograph5000.Tests.csproj.CoreCompileInputs.cache
+C:\Users\Rokoko\HandbookSimulator\Typographer5000\Typograph5000.Tests\bin\Debug\Typograph5000.Tests.dll
+C:\Users\Rokoko\HandbookSimulator\Typographer5000\Typograph5000.Tests\bin\Debug\Typograph5000.Tests.pdb
+C:\Users\Rokoko\HandbookSimulator\Typographer5000\Typograph5000.Tests\bin\Debug\nunit.framework.dll
+C:\Users\Rokoko\HandbookSimulator\Typographer5000\Typograph5000.Tests\bin\Debug\Typograph5000.exe
+C:\Users\Rokoko\HandbookSimulator\Typographer5000\Typograph5000.Tests\bin\Debug\Typograph5000.pdb
+C:\Users\Rokoko\HandbookSimulator\Typographer5000\Typograph5000.Tests\bin\Debug\Typograph5000.exe.config
+C:\Users\Rokoko\HandbookSimulator\Typographer5000\Typograph5000.Tests\bin\Debug\nunit.framework.xml
+C:\Users\Rokoko\HandbookSimulator\Typographer5000\Typograph5000.Tests\obj\Debug\Typograph5000.Tests.csproj.CopyComplete
+C:\Users\Rokoko\HandbookSimulator\Typographer5000\Typograph5000.Tests\obj\Debug\Typograph5000.Tests.dll
+C:\Users\Rokoko\HandbookSimulator\Typographer5000\Typograph5000.Tests\obj\Debug\Typograph5000.Tests.pdb

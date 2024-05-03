@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Typograph5000", "Typograph5000\Typograph5000.csproj", "{D6C872E0-8971-469A-A1B8-5DE2C642862E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Typograph5000.Tests", "Typograph5000.Tests\Typograph5000.Tests.csproj", "{266B42C0-D090-48A0-89C8-208CCBB5B4EA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{D6C872E0-8971-469A-A1B8-5DE2C642862E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D6C872E0-8971-469A-A1B8-5DE2C642862E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D6C872E0-8971-469A-A1B8-5DE2C642862E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{266B42C0-D090-48A0-89C8-208CCBB5B4EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{266B42C0-D090-48A0-89C8-208CCBB5B4EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{266B42C0-D090-48A0-89C8-208CCBB5B4EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{266B42C0-D090-48A0-89C8-208CCBB5B4EA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

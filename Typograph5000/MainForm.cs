@@ -26,19 +26,19 @@ namespace Typograph5000
             UpdateSelectedTools();
         }
 
-        public string FixPunctuationsMarks(string input)
+        public static string FixPunctuationsMarks(string input)
         {
             var regex = new Regex(@"\s+(?=[,.!?:;...])");
             return regex.Replace(input, string.Empty);
         }
         
-        public string FixWhitespaces(string input)
+        public static string FixWhitespaces(string input)
         {
             var regex = new Regex(@" +");
             return regex.Replace(input, " ");
         }
 
-        public string FixQuotes(string input)
+        public static string FixQuotes(string input)
         {
             var regex = new Regex("\"(?=[^\\n]*\")");
             input = regex.Replace(input, "«");
@@ -52,31 +52,31 @@ namespace Typograph5000
             return input;
         }
 
-        public string FixHyphen(string input)
+        public static string FixHyphen(string input)
         {
             var regex = new Regex(@"\s*-\s*");
             return regex.Replace(input, "-");
         }
         
-        public string FixDash(string input)
+        public static string FixDash(string input)
         {
             var regex = new Regex(@"\s?—\s?");
             return regex.Replace(input, "\u00a0— ");
         }
         
-        public string FixK(string input)
+        public static string FixK(string input)
         {
             var regex = new Regex(@"(okay)|(хорошо)|(окей)|((?<= )к(?= ))", RegexOptions.IgnoreCase);
             return regex.Replace(input, "k");
         }
 
-        public string FixSatanSocialNetwork(string input)
+        public static string FixSatanSocialNetwork(string input)
         {
             var regex = new Regex(@"(instagram)|(инстаграмм?\w?)|(инст\w)", RegexOptions.IgnoreCase);
             return regex.Replace(input, "сатанисткая соц-сеть");
         }
         
-        public string FixSymbols(string input)
+        public static string FixSymbols(string input)
         {
             var regex = new Regex(@"!{2,}");
             input = regex.Replace(input, "!!!");
@@ -88,52 +88,54 @@ namespace Typograph5000
             return regex.Replace(input, "...");
         }
 
-        public void Check()
+        public string Check(string input)
         {
             if (Settings[1])
             {
-                textBox.Text = FixPunctuationsMarks(textBox.Text);
+                input = FixPunctuationsMarks(input);
             }
             
             if (Settings[2])
             {
-                textBox.Text = FixWhitespaces(textBox.Text);
+                input = FixWhitespaces(input);
             }
             
             if (Settings[3])
             {
-                textBox.Text = FixQuotes(textBox.Text);
+                input = FixQuotes(input);
             }
             
             if (Settings[4])
             {
-                textBox.Text = FixHyphen(textBox.Text);
+                input = FixHyphen(input);
             }
             
             if (Settings[5])
             {
-                textBox.Text = FixDash(textBox.Text);
+                input = FixDash(input);
             }
             
             if (Settings[6])
             {
-                textBox.Text = FixK(textBox.Text);
+                input = FixK(input);
             }
             
             if (Settings[7])
             {
-                textBox.Text = FixSatanSocialNetwork(textBox.Text);
+                input = FixSatanSocialNetwork(input);
             }
             
             if (Settings[8])
             {
-                textBox.Text = FixSymbols(textBox.Text);
+                input = FixSymbols(input);
             }
+
+            return input;
         }
         
         private void checkButton_Click(object sender, EventArgs e)
         {
-            Check();
+            textBox.Text = Check(textBox.Text);
         }
 
         private void copyToolStripMenuItem_Click(object sender, EventArgs e)
@@ -164,7 +166,7 @@ namespace Typograph5000
         {
             if (Settings[0])
             {
-                Check();
+                textBox.Text = Check(textBox.Text);
             }
         }
 
